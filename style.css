@@ -1,0 +1,97 @@
+body {
+     font-family: "Poppins", sans-serif;
+     background-image: linear-gradient(#95f9c3, #0b3866);
+     height: 100vh;
+}
+
+h1 {
+     text-align: center;
+     padding-top: 30px;
+     font-size: 22px;
+     margin-bottom: 30px;
+}
+
+.container {
+     border-radius: 20px;
+     background-color: #ffff;
+     width: calc(200px + 20%);
+     max-width: 400px;
+     min-width: 300px;
+     margin: 0px auto;
+     position: relative;
+     top: 10vh;
+}
+
+form {
+     width: 90%;
+     margin: 0 auto;
+}
+
+label {
+     font-size: 15px;
+}
+
+.input-container {
+     margin-bottom: 20px;
+}
+
+input {
+     display: block;
+     width: 97%;
+     padding: 5px 0;
+     margin-bottom: 10px;
+     border: none;
+     border-bottom: 1px solid #0b3866;
+}
+
+input:focus {
+     background-color: #f2f1f1b1;
+     outline: none; /* removes the blue outline when a input is focus*/
+}
+
+button {
+     cursor: pointer;
+     width: 99%;
+     padding: 10px 0;
+     margin-bottom: 5px;
+     background-color: #23bdb8;
+     border: none;
+     border-radius: 3px;
+     font-family: "Poppins", sans-serif;
+     font-weight: 600;
+}
+
+button:active {
+     transform: scale(0.99);
+     background-color: #23bdb8b9;
+}
+
+/* will apply to an input that is the child of a element with classes .input-container and .success */
+.input-container.success input {
+     border-bottom: 1px solid rgb(39, 165, 123);
+}
+
+.input-container.error input {
+     border-bottom: 1px solid rgb(218, 40, 40);
+}
+
+/* will apply to .error that is a child of .input-container*/
+.input-container .error {
+     color: rgb(218, 40, 40);
+     font-size: 9px;
+     height: 13px;
+}
+
+.log-in {
+     font-size: 15px;
+     width: fit-content;
+     margin: 0px auto;
+     padding-bottom: 60px;
+}
+
+.log-in span {
+     color: #0b3866; 
+     color: #23bdb8;
+     font-weight: 600;
+     cursor: pointer;
+}
